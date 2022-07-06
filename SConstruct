@@ -22,7 +22,7 @@ print("Checking for gengetopt...")
 if env.Execute("@which gengetopt &> /dev/null"):
     print("not found (required)")
     Exit(1)
-else: print "found"
+else: print("found")
 if not conf.CheckLibWithHeader("event", "event2/event.h", "C++"):
     print("libevent required")
     Exit(1)
